@@ -7,7 +7,7 @@ public class Bike extends Vehicle {
         super(brand, type, AMOUNT_OF_WHEELS, weight);
     }
 
-//    @Override
+    @Override
     public String giveMotivePower() {
         return ("menskracht");
     }
