@@ -7,10 +7,6 @@ public abstract class MeansOfTransport {
     private String type;
 
     protected MeansOfTransport(String brand, String type) {
-        this.amountOfTransportations++;
-        this.id = this.amountOfTransportations;
-        this.brand = brand;
-        this.type = type;
     }
 
     /**
@@ -26,7 +22,6 @@ public abstract class MeansOfTransport {
      */
     @Override
     public String toString() {
-        return String.format("Vervoermiddel #%d %s %s aangedreven door %s",
-                id, brand, type, giveMotivePower());
+        return "";
     }
 }

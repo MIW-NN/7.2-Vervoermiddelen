@@ -1,10 +1,8 @@
 package vervoermiddelen.project.model;
 
-public abstract class Boat extends MeansOfTransport {
+public abstract class Boat {
     private double lengthInMeters;
 
     protected Boat(String brand, String type, double length) {
-        super(brand, type);
-        this.lengthInMeters = length;
     }
 }
