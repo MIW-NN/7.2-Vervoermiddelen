@@ -7,4 +7,8 @@ public abstract class Vaartuig extends Vervoermiddel {
         super(merk, type);
         this.lengteInMeters = lengte;
     }
+
+    protected double getLengteInMeters() {
+        return lengteInMeters;
+    }
 }

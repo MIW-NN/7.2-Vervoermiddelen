@@ -9,4 +9,8 @@ public abstract class Voertuig extends Vervoermiddel {
         this.aantalWielen = aantalWielen;
         this.gewicht = gewicht;
     }
+
+    protected int getGewicht() {
+        return gewicht;
+    }
 }
