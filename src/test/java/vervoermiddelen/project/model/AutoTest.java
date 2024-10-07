@@ -1,14 +1,9 @@
 package vervoermiddelen.project.model;
 
-import org.junit.After;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
-public class CarTest {
+public class AutoTest {
 
     public static final String BRAND = "Audi";
     public static final String TYPE = "A1";
@@ -17,7 +12,7 @@ public class CarTest {
 
     @Test
     public void expectCarToContainValuesGivenAsString(){
-        var car = new Car(BRAND, TYPE, WEIGHT,TYPE_OF_FUEL);
+        var car = new Auto(BRAND, TYPE, WEIGHT,TYPE_OF_FUEL);
         var carString = car.toString();
 
         Assert.assertTrue(carString.contains(BRAND));

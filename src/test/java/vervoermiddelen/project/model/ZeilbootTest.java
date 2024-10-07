@@ -3,7 +3,7 @@ package vervoermiddelen.project.model;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class SailboatTest {
+public class ZeilbootTest {
 
     public static final String BRAND = "beneteau";
     public static final String TYPE = "Kielboot";
@@ -11,7 +11,7 @@ public class SailboatTest {
 
     @Test
     public void expectSailboatToContainValuesGivenAsString(){
-        var sailboat = new Sailboat(BRAND, TYPE, LENGTH);
+        var sailboat = new Zeilboot(BRAND, TYPE, LENGTH);
         var sailboatString = sailboat.toString();
 
         Assert.assertTrue(sailboatString.contains(BRAND));
