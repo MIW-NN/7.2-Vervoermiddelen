@@ -8,12 +8,15 @@ public abstract class Vervoermiddel {
     private String type;
 
     protected Vervoermiddel(String merk, String type) {
+        this.id = ++aantalVervoermiddelen;
+        this.merk = merk;
+        this.type = type;
     }
 
     public abstract String geefAandrijfkracht();
 
     @Override
     public String toString() {
-        return "";
+        return String.format("Vervoermiddel #%d %s %s aangedreven door %s", id, merk, type, geefAandrijfkracht());
     }
 }
