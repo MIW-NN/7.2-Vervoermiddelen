@@ -1,7 +1,7 @@
 package vervoermiddelen.project.model;
 
 public class Auto extends Voertuig implements Belastbaar {
-    protected static final int AANTAL_WIELEN = 4;
+    private static final int AANTAL_WIELEN = 4;
 
     private static final int BOVENGRENS_GEWICHT_GROEP_1 = 1000;
     private static final int ONDERGRENS_GEWICHT_GROEP_3 = 1450;
