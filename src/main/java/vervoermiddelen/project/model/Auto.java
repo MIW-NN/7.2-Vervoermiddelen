@@ -9,7 +9,7 @@ public class Auto extends Voertuig implements Belastbaar {
     private static final int TARIEF_GROEP_2 = 104;
     private static final int TARIEF_GROEP_3 = 122;
 
-    private static final String ELEKTRISCH = "elektrische";
+    private static final String ELEKTRISCH = "elektrisch";
     private static final String DIESEL = "diesel";
     private static final double FACTOR_ELEKTRISCH = .5;
     private static final double FACTOR_DIESEL = 1.3;
